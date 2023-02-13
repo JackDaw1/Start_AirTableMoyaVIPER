@@ -8,7 +8,7 @@ class OrderDetailInteractor: OrderDetailInteractorInputProtocol {
     
     func deleteOrder() {
         guard let orderItem = orderItem else { return }
-        orderStore.removeOrder(orderItem)
+        //orderStore.removeOrder(orderItem)
         presenter?.didDeleteOrder()
     }
     

@@ -20,9 +20,9 @@ class OrderListPresenter: OrderListPresenterProtocol {
         interactor?.retrieveOrders()
     }
     
-    func removeOrder(_ order: OrderItem) {
-        interactor?.deleteOrder(order)
-    }
+//    func removeOrder(_ order: OrderItem) {
+//        interactor?.deleteOrder(order)
+//    }
     
 }
 

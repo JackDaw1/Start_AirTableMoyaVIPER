@@ -21,11 +21,11 @@ class OrderAPI {
         orders.append(order)
     }
     
-    func removeOrder(_ order: OrderItem) {
-        if let index = orders.firstIndex(where: { $0 === order }) {
-            orders.remove(at: index)
-        }
-    }
+//    func removeOrder(_ order: OrderItem) {
+//        if let index = orders.firstIndex(where: { $0 === order }) {
+//            orders.remove(at: index)
+//        }
+//    }
     
     static func createTestDate(value: String) -> Date? {
         let RFC3339DateFormatter = DateFormatter()
@@ -36,5 +36,4 @@ class OrderAPI {
         //let string = "1996-12-19T16:39:57-08:00"
         return RFC3339DateFormatter.date(from: value)
     }
-    
 }
