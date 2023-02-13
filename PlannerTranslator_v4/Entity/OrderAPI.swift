@@ -11,9 +11,9 @@ class OrderAPI {
         
         OrderItem(summary: "Creating", deadline: OrderAPI.createTestDate(value: "2023-01-08"), name: "VIPER in iOS", customer: "proglib"),
         
-        OrderItem(summary: "https://proglib.io/", deadline: OrderAPI.createTestDate(value: "2023-01-08"), name: "MVVM in iOS", customer: "medium"),
+        OrderItem(summary: "https://proglib.io/", deadline: OrderAPI.createTestDate(value: "2023-01-09"), name: "MVVM in iOS", customer: "medium"),
         
-        OrderItem(summary: "https://proglib.io/", deadline: OrderAPI.createTestDate(value: "2023-01-08"), name: "How to make good apps", customer: "medium"),
+        OrderItem(summary: "https://proglib.io/", deadline: OrderAPI.createTestDate(value: "2023-01-12"), name: "How to make good apps", customer: "medium"),
         
     ]
     

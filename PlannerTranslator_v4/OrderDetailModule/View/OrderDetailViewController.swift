@@ -3,7 +3,6 @@ import UIKit
 class OrderDetailViewController: UIViewController {
     
     var titleLabel: UILabel = UILabel()
-    
     var customerLabel: UILabel = UILabel()
     var summaryLabel: UILabel = UILabel()
     

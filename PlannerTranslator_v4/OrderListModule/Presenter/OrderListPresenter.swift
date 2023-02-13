@@ -40,7 +40,6 @@ extension OrderListPresenter: OrderListInteractorOutputProtocol {
         guard !orders.isEmpty else { return }
         
         let array = orders
-//            .filter({ !$0.made })
             .sorted { order1, order2 in
             guard let deadline1 = order1.deadline, let deadline2 = order2.deadline else {
                 return false
