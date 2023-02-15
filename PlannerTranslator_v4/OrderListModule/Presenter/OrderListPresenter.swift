@@ -19,11 +19,7 @@ class OrderListPresenter: OrderListPresenterProtocol {
     func viewWillAppear() {
         interactor?.retrieveOrders()
     }
-    
-//    func removeOrder(_ order: OrderItem) {
-//        interactor?.deleteOrder(order)
-//    }
-    
+
 }
 
 extension OrderListPresenter: OrderListInteractorOutputProtocol {
