@@ -17,7 +17,7 @@ protocol OrderDetailPresenterProtocol: AnyObject {
     
     // VIEW -> PRESENTER
     func viewDidLoad()
-    func editOrder(summary: String?, deadline: Date?, name: String, customer:String?)
+    func editOrder(price: Int?, deadline: Date?, name: String, customer:String?)
     func deleteOrder()
 }
 
@@ -28,7 +28,7 @@ protocol OrderDetailInteractorInputProtocol: AnyObject {
     
     // PRESENTER -> INTERACTOR
     func deleteOrder()
-    func editOrder(summary: String?, deadline: Date?, name: String, customer:String?)
+    func editOrder(price: Int?, deadline: Date?, name: String, customer:String?)
 }
 
 protocol OrderDetailInteractorOutputProtocol: AnyObject {

@@ -12,9 +12,9 @@ class OrderDetailPresenter: OrderDetailPresenterProtocol {
         }
     }
     
-    func editOrder(summary: String?, deadline: Date?, name: String, customer:String?) {
+    func editOrder(price: Int?, deadline: Date?, name: String, customer:String?) {
         
-        interactor?.editOrder(summary: summary, deadline: deadline, name: name, customer: customer)
+        interactor?.editOrder(price: price, deadline: deadline, name: name, customer: customer)
     }
     
     func deleteOrder() {

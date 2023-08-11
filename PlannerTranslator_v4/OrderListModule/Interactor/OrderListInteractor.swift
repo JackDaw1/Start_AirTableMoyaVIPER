@@ -26,9 +26,9 @@ class OrderListInteractor: OrderListInteractorInputProtocol {
         presenter?.didAddOrder(order)
     }
     
-//    func deleteOrder(_ order: OrderItem) {
-//        //orderStore.removeOrder(order)
-//        presenter?.didRemoveOrder(order)
-//    }
+    func deleteOrder(_ order: OrderItem) {
+        orderStore.removeOrder(order)
+        presenter?.didRemoveOrder(order)
+    }
     
 }

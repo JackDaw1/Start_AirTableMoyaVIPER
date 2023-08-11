@@ -1,17 +1,17 @@
 import Foundation
 
 class OrderItem {
-    var summary: String?
+    var price: Int?
     var deadline: Date?
     var name: String
     var customer: String?
     
-    init(summary: String?,
+    init(price: Int?,
         deadline: Date?,
         name: String,
         customer:String?) {
         
-        self.summary = summary
+        self.price = price
         self.deadline = deadline
         self.name = name
         self.customer = customer

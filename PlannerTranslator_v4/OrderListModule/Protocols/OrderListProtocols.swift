@@ -20,7 +20,7 @@ protocol OrderListPresenterProtocol: AnyObject {
     func viewWillAppear()
     func showOrderDetail(_ order: OrderItem)
     func addOrder(_ order: OrderItem)
-//    func removeOrder(_ order: OrderItem)
+    func removeOrder(_ order: OrderItem)
 }
 
 protocol OrderListInteractorInputProtocol: AnyObject {
@@ -30,14 +30,14 @@ protocol OrderListInteractorInputProtocol: AnyObject {
     // PRESENTER -> INTERACTOR
     func retrieveOrders()
     func saveOrder(_ order: OrderItem)
-//    func deleteOrder(_ order: OrderItem)
+    func deleteOrder(_ order: OrderItem)
 }
 
 protocol OrderListInteractorOutputProtocol: AnyObject {
     
     // INTERACTOR -> PRESENTER
     func didAddOrder(_ order: OrderItem)
-//    func didRemoveOrder(_ order: OrderItem)
+    func didRemoveOrder(_ order: OrderItem)
     func didRetrieveOrders(_ orders: [OrderItem])
     func onError(message: String)
 }

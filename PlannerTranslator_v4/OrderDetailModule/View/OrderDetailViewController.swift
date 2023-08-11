@@ -4,7 +4,7 @@ class OrderDetailViewController: UIViewController {
     
     var titleLabel: UILabel = UILabel()
     var customerLabel: UILabel = UILabel()
-    var summaryLabel: UILabel = UILabel()
+    var priceLabel: UILabel = UILabel()
     
     var presenter: OrderDetailPresenterProtocol?
     
@@ -15,7 +15,7 @@ class OrderDetailViewController: UIViewController {
     func setupConstraints() {
         [
             titleLabel,
-            summaryLabel,
+            priceLabel,
             customerLabel,
             
         ].forEach { customView in
@@ -35,10 +35,10 @@ class OrderDetailViewController: UIViewController {
             customerLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
             customerLabel.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor),
             
-            summaryLabel.leadingAnchor.constraint(equalTo: customerLabel.leadingAnchor),
-            summaryLabel.trailingAnchor.constraint(equalTo: customerLabel.trailingAnchor),
-            summaryLabel.topAnchor.constraint(equalTo: customerLabel.bottomAnchor),
-            summaryLabel.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor),
+            priceLabel.leadingAnchor.constraint(equalTo: customerLabel.leadingAnchor),
+            priceLabel.trailingAnchor.constraint(equalTo: customerLabel.trailingAnchor),
+            priceLabel.topAnchor.constraint(equalTo: customerLabel.bottomAnchor),
+            priceLabel.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor),
             
         ])
     }
@@ -59,7 +59,7 @@ extension OrderDetailViewController: OrderDetailViewProtocol {
         
         titleLabel.text = order.name
         customerLabel.text = order.customer
-        summaryLabel.text = order.summary
+        //priceLabel.text = order.price
 
     }
     
