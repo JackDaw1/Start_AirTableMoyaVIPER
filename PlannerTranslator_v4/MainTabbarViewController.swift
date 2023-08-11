@@ -8,8 +8,6 @@ class MainTabBarController: UITabBarController {
         generateTabBar()
         setTabBarAppearance()
     }
-
-    
     
     fileprivate func createNavController(for rootViewController: UIViewController,
                                         title: String,
