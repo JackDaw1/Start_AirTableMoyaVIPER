@@ -32,7 +32,6 @@ extension OrderListPresenter: OrderListInteractorOutputProtocol {
         interactor?.retrieveOrders()
     }
     
-    
     func didAddOrder(_ order: OrderItem) {
         interactor?.retrieveOrders()
     }

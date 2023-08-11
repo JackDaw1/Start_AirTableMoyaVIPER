@@ -12,9 +12,16 @@ class OrderDetailPresenter: OrderDetailPresenterProtocol {
         }
     }
     
-    func editOrder(price: Int?, deadline: Date?, name: String, customer:String?) {
+//    var name: String
+//    var price: Int?
+//    var deadline: Date?
+//    var customer: String?
+//    var paid: Bool?
+//    var comment: String?
+    
+    func editOrder(name: String, price: Int?, deadline: Date?, customer: String, paid: Bool?, comment:String?) {
         
-        interactor?.editOrder(price: price, deadline: deadline, name: name, customer: customer)
+        interactor?.editOrder(name: name, price: price, deadline: deadline, customer: customer, paid: paid, comment: comment)
     }
     
     func deleteOrder() {

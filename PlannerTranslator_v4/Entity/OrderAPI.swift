@@ -6,14 +6,14 @@ class OrderAPI {
     public static let shared = OrderAPI()
     
     public private(set) var orders: [OrderItem] = [
+//        name: String, price: Int?, deadline: Date?, customer: String, paid: Bool?, comment:String?
+        OrderItem(name: "Moya and AirTable in iOS-app", price: 300, deadline: OrderAPI.createTestDate(value: "2023-01-08"), customer: "proglib", paid: true, comment: "111"),
         
-        OrderItem(price: 300, deadline: OrderAPI.createTestDate(value: "2023-01-08"), name: "Moya and AirTable in iOS-app", customer: "proglib"),
+        OrderItem(name: "VIPER in iOS", price: 200, deadline: OrderAPI.createTestDate(value: "2023-01-08"),  customer: "proglib", paid: true, comment: "111"),
         
-        OrderItem(price: 200, deadline: OrderAPI.createTestDate(value: "2023-01-08"), name: "VIPER in iOS", customer: "proglib"),
+        OrderItem(  name: "MVVM in iOS", price: 123, deadline: OrderAPI.createTestDate(value: "2023-01-09"), customer: "medium", paid: true, comment: "111"),
         
-        OrderItem(price: 123, deadline: OrderAPI.createTestDate(value: "2023-01-09"), name: "MVVM in iOS", customer: "medium"),
-        
-        OrderItem(price: 32, deadline: OrderAPI.createTestDate(value: "2023-01-12"), name: "How to make good apps", customer: "medium"),
+        OrderItem(name: "How to make good apps", price: 32, deadline: OrderAPI.createTestDate(value: "2023-01-12"),  customer: "medium", paid: true, comment: "111"),
         
     ]
     

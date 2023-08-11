@@ -65,7 +65,7 @@ class AddOrderViewController: UIViewController, UIPickerViewDelegate {
     @objc
     func save() {
         //TODO: настроить алерт сообщение о важности внесения имени
-        handler?(OrderItem(price: nil, deadline: nil, name: nameTextField.text ?? "", customer: customerTextField.text))
+        handler?(OrderItem(name: nameTextField.text ?? "", price: nil, deadline: nil, customer: customerTextField.text, paid: nil, comment: nil))
 //        switchView.isSelected
 //        pickView.selectedRow(inComponent: 0)
         self.dismiss(animated: true)
